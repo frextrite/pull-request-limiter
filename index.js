@@ -21,10 +21,10 @@ module.exports = app => {
     var repo = getRepository(payload)
 
     // labels to be applied before closing
-    var closingLabels = ["invalid"]
+    var closingLabels = process.env.INVALID_LABEL || ["invalid"]
 
     // maximum number of allowed pull requests
-    var threshold = 2
+    var threshold = process.env.THRESHOLD || 2
 
     // construct query string to get all pull requests
     // created by an author in the current repository
@@ -89,7 +89,7 @@ module.exports = app => {
    * @param labels - the list of labels to check in
    */
   function filterPullRequestsUsingLabels(labels) {
-    invalidLabel = "invalid"
+    invalidLabel = process.env.INVALID_LABEL ||  "invalid"
     return labels.includes(invalidLabel)
   }
 

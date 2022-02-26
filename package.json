@@ -30,7 +30,7 @@
     "hosted-git-info": "2.8.9",
     "path-parse": "1.0.7",
     "tmpl": "1.0.5",
-    "url-parse": "1.5.3"
+    "url-parse": "1.5.8"
   },
   "devDependencies": {
     "jest": "^24.9.0",

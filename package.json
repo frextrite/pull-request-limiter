@@ -20,7 +20,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.5.3",
+    "probot": "^12.2.8",
     "acorn": "5.7.4",
     "yargs-parser": "13.1.2",
     "node-fetch": "2.6.1",
